@@ -29,14 +29,20 @@
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">more...</a>
             </li>
           </ul>
+    <!-- user name input -->
+          <div class="input-group flex-nowrap" style="width: 35rem;">
+            <input type="text" class="form-control " id="userName" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+
     <!-- form Text area -->
     <form class="was-validated">
         <div class="form-group">
 
+            <!-- comment area -->
             <label class="text-white" for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control " id="textArea" placeholder="Enter some review here" rows="3"></textarea>
             <!-- button -->
-            <button type="button" class="btn btn-success btn-lg float-right mt-4 mb-4">Large button</button>    
+            <button type="button" onclick="start()" class="btn btn-success btn-lg float-right mt-4 mb-4" id="btn">Large button</button>    
 
         </div>
     </form>
@@ -47,7 +53,7 @@
 
         <!-- <div class="card-header text-success">Costumer Review</div> -->
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-right">comment one</li>
+          <li class="list-group-item " id="commentOne"></li>
           <li class="list-group-item text-right">comment two</li>
           <li class="list-group-item text-right">comment three</li>
         </ul>
